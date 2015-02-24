@@ -1,33 +1,41 @@
+@namespace epub url(http://www.idpf.org/2007/ops);
 
 body {
-  margin: 2.5em;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  line-height: 1.5;
+  margin: 2.5em 5em;
+  text-align: justify;
 }
 
-section {
-  overflow: auto;
-}
-
-section > h1:first-of-type {
-  margin: 5em 0 1em;
+h1 {
+  margin: 7.5rem 0 2rem;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 150%;
+  font-size: 1.5rem;
   font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 .chapter-numbering {
+  display: block;
+  margin-bottom: 3.5rem;
+}
+
+h1 .chapter-numbering::after {
+  content: '.';
+}
+
+h1 .chapter-title {
+  display: block;
+  font-size: 1rem;
+}
+
+h1 .chapter-title::after {
+  content: '.';
 }
 
 p {
-  line-height: 1.5em;
   margin: 0;
-  text-align: justify;
   text-indent: 2.5em;
-}
-
-section > p:first-of-type {
-  text-indent: 0;
-}
-
-ol, ul {
-  line-height: 1.5em;
 }
 
 hr {
@@ -36,95 +44,97 @@ hr {
   height: 1.5em;
 }
 
-blockquote {
-  margin: 0 2.5em;
-}
-
-blockquote h1 {
-  font-size: 1em;
-  font-weight: normal;
-  line-height: 1.5em;
-  margin: 0;
-}
-
 a {
   color: black;
   text-decoration: none;
 }
 
+a:hover { color: red; }
+
+abbr {
+  border: none;
+  text-decoration: none;
+}
+
 sub, sup {
-  font-size: 65%;
   line-height: 0;
 }
 
-.chapter-description {
-  display: block;
-  margin: 0 0 0.5em;
+section[id^=chapter-] > p:first-of-type {
+  text-indent: 0;
 }
 
-.chapter-title {
-  display: block;
-  font-size: 67%;
-  margin: 2em 0;
-}
-
-.first-letter {
-  display: block;
-  line-height: 1em;
+section[id^=chapter-] > p:first-of-type::first-letter {
   float: left;
-  font-size: 300%;
+  font-size: 3em;
   font-weight: bold;
+  line-height: 0.67;
+  margin: 0.13em 0em 0 0;
 }
 
-.first-words {
+section[id^=chapter-] > p > .first-words {
   text-transform: uppercase;
 }
 
-/* Footnotes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.footnote {
-  border: 1px dotted black;
-  clear: right;
-  float: right;
-  font-size: 85%;
-  margin: 1em 0 1em 1em;
-  padding: 1em;
-  width: 30%;
+#toc h1 {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
-.footnote-number {
-  float: left;
-  margin: 0 1em 0 0;
-}
-
-.footnote-number > a:before { content: '['; }
-.footnote-number > a:after  { content: ']'; }
-.footnote-number .text { display: none; }
-
-.footnote-ref a:before { content: '['; }
-.footnote-ref a:after  { content: ']'; }
-
-/* Table of contents ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#toc > h1 {
-  display: none;
-}
-
-#toc ol {
+#toc > ol {
+  counter-reset: toc-chapter;
+  list-style: none;
   margin: 5em 0 0;
+  padding: 0;
 }
 
-#toc li {
-  list-style-type: none;
-  margin: 1em 0 0;
+#toc > ol > li {
+  counter-increment: toc-chapter;
+  margin: 1em 0;
 }
 
-#toc .chapter-description {
+#toc > ol > li::before {
+  content: 'Chapter ' counter(toc-chapter, upper-roman) '. ';
   display: inline-block;
-  margin: 0;
-  min-width: 7em;
+  min-width: 7rem;
 }
 
-#toc .chapter-title {
-  display: inline-block;
-  font-size: 100%;
+#toc a::after {
+  content: '.';
+}
+
+#colophon .licence {
+  margin: 2rem 0;
+  overflow: auto;
+  padding-left: 6.25rem;
+  text-indent: 0;
+}
+
+#colophon .licence .mark {
+  float: left;
+  margin-left: -6.25rem;
+}
+
+aside[epub|type=footnote] {
+  font-size: 85%;
+  line-height: 1.5em;
+  margin: 1rem 0;
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+aside[epub|type=footnote] > *:first-child {
+  float: left;
   margin: 0;
+  text-indent: 0;
+}
+
+a[epub|type=noteref]::before, aside[epub|type=footnote] > *:first-child > a::before { content: '['; }
+a[epub|type=noteref]::after,  aside[epub|type=footnote] > *:first-child > a::after  { content: ']'; }
+
+.text {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
