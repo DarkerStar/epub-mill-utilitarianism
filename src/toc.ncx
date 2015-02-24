@@ -11,35 +11,35 @@
 		<text>John Stuart Mill</text>
 	</docAuthor>
 	<navMap>
-		<navPoint id="chapter-01" playOrder="1">
+		<navPoint id="chapter-1" playOrder="1">
 			<navLabel>
 				<text>Chapter Ⅰ. General Remarks</text>
 			</navLabel>
-			<content src="text/chapter-01.xhtml"/>
+			<content src="text/chapter-1.xhtml"/>
 		</navPoint>
-		<navPoint id="chapter-02" playOrder="2">
+		<navPoint id="chapter-2" playOrder="2">
 			<navLabel>
 				<text>Chapter ⅠⅠ. What Utilitarianism Is</text>
 			</navLabel>
-			<content src="text/chapter-02.xhtml"/>
+			<content src="text/chapter-2.xhtml"/>
 		</navPoint>
-		<navPoint id="chapter-03" playOrder="3">
+		<navPoint id="chapter-3" playOrder="3">
 			<navLabel>
 				<text>Chapter ⅠⅠⅠ. Of the Ultimate Sanction of the Principle of Utility</text>
 			</navLabel>
-			<content src="text/chapter-03.xhtml"/>
+			<content src="text/chapter-3.xhtml"/>
 		</navPoint>
-		<navPoint id="chapter-04" playOrder="4">
+		<navPoint id="chapter-4" playOrder="4">
 			<navLabel>
 				<text>Chapter ⅠⅤ. Of What Sort of Proof the Principle of Utility is Susceptible</text>
 			</navLabel>
-			<content src="text/chapter-04.xhtml"/>
+			<content src="text/chapter-4.xhtml"/>
 		</navPoint>
-		<navPoint id="chapter-05" playOrder="5">
+		<navPoint id="chapter-5" playOrder="5">
 			<navLabel>
 				<text>Chapter Ⅴ. On the Connection Between Justice and Utility</text>
 			</navLabel>
-			<content src="text/chapter-05.xhtml"/>
+			<content src="text/chapter-5.xhtml"/>
 		</navPoint>
 	</navMap>
 </ncx>
