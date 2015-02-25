@@ -1,4 +1,53 @@
-XXXX-XX-XX  Mark A. Gibbs  <indi.in.the.wired@gmail.com>
+2015-02-24  Mark A. Gibbs  <indi.in.the.wired@gmail.com>
+     
+     * AUTHORS:
+          * Added credits for renaming chapter files.
+     
+     * NEWS:
+          * Updated with news of new release.
+     
+     * book.mk:
+          * Changed names of chapter files to new format.
+     
+     * src/content.opf:
+          * Changed names of chapter files to new format.
+     
+     * src/toc.xhtml:
+          * Changed names of chapter files to new format.
+          * Simplified XHTML markup.
+     
+     * src/toc.ncx:
+          * Changed names of chapter files to new format.
+     
+     * src/text/chapter-01.xhtml:
+          * Simplified XHTML markup.
+     
+     * src/text/chapter-02.xhtml:
+          * Simplified XHTML markup.
+     
+     * src/text/chapter-03.xhtml:
+          * Simplified XHTML markup.
+     
+     * src/text/chapter-04.xhtml:
+          * Simplified XHTML markup.
+     
+     * src/text/chapter-05.xhtml:
+          * Simplified XHTML markup.
+     
+     * src/text/colophon.xhtml:
+          * Removed styling from <head>.
+          * Simplified XHTML markup.
+          * Added GitHub issues link.
+     
+     * src/style/style.css:
+          * Complete rewrite with much simpler styling code.
+     
+     * src/img/cover.svg:
+          * Simplified SVG markup.
+          * Replaced inline styles with attributes.
+
+
+2013-08-04  Mark A. Gibbs  <indi.in.the.wired@gmail.com>
      
      * COPYING: New project copyright documentaion.
      
@@ -51,6 +100,6 @@ XXXX-XX-XX  Mark A. Gibbs  <indi.in.the.wired@gmail.com>
      * src/img/publicdomain.svg: New EPUB 3 content document.
 
 
-# Copyright 2015 Mark A. Gibbs
+# Copyright 2013-2015 Mark A. Gibbs
 # Copying and distribution of this file, with or without modification, are
 # permitted provided the copyright notice and this notice are preserved.

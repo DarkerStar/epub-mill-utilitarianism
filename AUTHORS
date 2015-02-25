@@ -18,10 +18,16 @@ Mark A. Gibbs                                      <indi.in.the.wired@gmail.com>
                   src/toc.ncx, src/toc.xhtml, src/text/cover.xhtml,
                   src/text/title-page.xhtml, src/text/chapter-01.xhtml,
                   src/text/chapter-02.xhtml, src/text/chapter-03.xhtml,
-                  src/text/chapter-04.xhtml, src/text/chapter-04.xhtml,
+                  src/text/chapter-04.xhtml, src/text/chapter-05.xhtml,
                   src/text/colophon.xhtml, src/style/style.css,
                   src/img/cover.svg, src/img/cover.png, src/img/cc-zero.svg,
                   src/img/publicdomain.svg
+                  
+  renamed      -> src/text/chapter-01.xhtml -> src/text/chapter-1.xhtml
+                  src/text/chapter-02.xhtml -> src/text/chapter-2.xhtml
+                  src/text/chapter-03.xhtml -> src/text/chapter-3.xhtml
+                  src/text/chapter-04.xhtml -> src/text/chapter-4.xhtml
+                  src/text/chapter-05.xhtml -> src/text/chapter-5.xhtml
 
 
 ################################################################################
