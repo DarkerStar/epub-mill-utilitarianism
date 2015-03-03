@@ -77,9 +77,7 @@ section[id^=chapter-] > p > .first-words {
 }
 
 #toc h1 {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  display: none;
 }
 
 #toc > ol {
@@ -134,7 +132,5 @@ a[epub|type=noteref]::before, aside[epub|type=footnote] > *:first-child > a::bef
 a[epub|type=noteref]::after,  aside[epub|type=footnote] > *:first-child > a::after  { content: ']'; }
 
 .text {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  display: none;
 }
