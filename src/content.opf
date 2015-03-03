@@ -15,15 +15,23 @@
 		<meta refines="#editor" property="file-as">Gibbs, Mark A.</meta>
 		<meta refines="#editor" property="role" scheme="marc:relators">edt</meta>
 		
+		<dc:description>In 1861, John Stuart Mill published a series of articles he intended to be the definitive defence of the ethical theory of utilitarianism. These were collected in 1863 as a book, which Mill revised several times over his lifetime. It remains one of the best introductions to utilitarian ethics.</dc:description>
+		
 		<dc:language>en</dc:language>
 		
-		<meta property="dcterms:modified">2013-08-04T00:00:00Z</meta>
+		<meta property="dcterms:dateCopyrighted">1863</meta>
 		
-		<dc:publisher>Longmans, Green &amp; co.</dc:publisher>
-		<meta property="dcterms:dateCopyrighted">1897</meta>
-		<dc:date>1897</dc:date>
+		<dc:publisher>Indi’s ebook collection</dc:publisher>
+		<dc:date>2013-08-04</dc:date>
 		
+		<!-- BISAC subject headings -->
 		<dc:subject>Philosophy</dc:subject>
+		<dc:subject><!-- PHILOSOPHY / -->Ethics &amp; Moral Philosophy</dc:subject>
+		<dc:subject><!-- PHILOSOPHY / Movements / -->Utilitarianism</dc:subject>
+		<dc:subject><!-- PHILOSOPHY / -->Political</dc:subject>
+		<dc:subject><!-- PHILOSOPHY / -->Social</dc:subject>
+		
+		<meta property="dcterms:modified">2015-03-03T02:00:00Z</meta>
 		
 		<meta name="cover" content="image-cover"/>
 	</metadata>
@@ -52,15 +60,15 @@
 		<item id="ncx" href="toc.ncx"   media-type="application/x-dtbncx+xml"                 />
 	</manifest>
 	<spine toc="ncx">
-		<itemref idref="cover"                                     linear="no"/>
-		<itemref idref="title-page" properties="page-spread-right"            />
-		<itemref idref="toc"                                       linear="no"/>
-		<itemref idref="chapter-1" properties="page-spread-right"             />
-		<itemref idref="chapter-2" properties="page-spread-right"             />
-		<itemref idref="chapter-3" properties="page-spread-right"             />
-		<itemref idref="chapter-4" properties="page-spread-right"             />
-		<itemref idref="chapter-5" properties="page-spread-right"             />
-		<itemref idref="colophon"   properties="page-spread-right"            />
+		<itemref idref="cover"      linear="no"/>
+		<itemref idref="title-page"            />
+		<itemref idref="toc"        linear="no"/>
+		<itemref idref="chapter-1"             />
+		<itemref idref="chapter-2"             />
+		<itemref idref="chapter-3"             />
+		<itemref idref="chapter-4"             />
+		<itemref idref="chapter-5"             />
+		<itemref idref="colophon"              />
 	</spine>
 	<guide>
 		<reference type="cover"      title="Cover"             href="text/cover.xhtml"     />
