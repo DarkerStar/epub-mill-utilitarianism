@@ -1,3 +1,16 @@
+Version 0.3.0-alpha ----------------------------------------------- [2015-03-03]
+
+*   Added description tag to metadata.
+
+*   Changed publishing information to reflect the publication of the book rather
+    than the original paper (as it's supposed to be according to the EPUB spec).
+
+*   Books's subject list now uses BISAC categories.
+
+*   Styling no longer uses absolute positioning (which apparently causes
+    problems with some readers).
+
+
 Version 0.0.2-alpha ----------------------------------------------- [2015-02-24]
 
 *   Simplified markup and styling.
